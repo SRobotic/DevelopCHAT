@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brockers</title>
+
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome CDN -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"</script>
+
+   <!-- <link rel="stylesheet" href="./style/main.css"> -->
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+
+<body>
+    <script src="{% static 'index.js' %}"></script>
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">LOGO</span>
+                <div class="search-bar">
+                    <form class="input-group ">
+                        <input id="" autocomplete="off" type="search" class="form-control rounded"
+                            placeholder="Search (ctrl + &quot;/&quot; to focus)">
+                        <span class="input-group-text border-0">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </form>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <a class="text-reset me-3" href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <a class="text-reset me-3" href="#">
+                        <i class=" fas fa-bell"></i>
+                    </a>
+                    <a class="d-flex align-items-center" href="#">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="25"
+                            alt="Black and White Portrait of a Man" loading="lazy" />
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row header-bar">
+                <div class="col-3 text-center">
+                    <p>Dashboard</p>
+                </div>
+                <div class="col-9 profit-bar">
+                    <p>Profit <span id="id_account_pl">0</span></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="holder" id="holder">
+<!--            <div id="card" class="card">-->
+<!--                <div class="top-bar" id="top_bar0">-->
+<!--                    <span id="top_span0">EvaPanda - TSLA</span>-->
+<!--                    <button type="button" class="btn-close float-end" aria-label="Close"></button>-->
+<!--                </div>-->
+<!--                <div class="message" id="id_msg0">-->
+<!--                    <span id="p_msg0">BTO TSLA @ 1.40 (day trade)</span>-->
+<!--&lt;!&ndash;                    <p>BTO TSLA @ 1.40 (day trade)</p>&ndash;&gt;-->
+<!--                </div>-->
+<!--                <div class="trade">-->
+<!--                    <div class="buy-bar">-->
+<!--                        <span onclick="Buy(0)">Buy <span id="p_buy_time0">1</span>x <span id="p_buy0">0</span></span>-->
+<!--                        <button onclick="myBuyTime(1,0)">1x</button>-->
+<!--                        <button onclick="myBuyTime(2,0)">2x</button>-->
+<!--                        <button onclick="myBuyTime(3,0)">3x</button>-->
+<!--                        <button onclick="myBuyTime(4,0)">4x</button>-->
+<!--                    </div>-->
+<!--                    <div class="ask" id="id_ask0" onclick="myAsk(0)">-->
+<!--                        <h6>Ask:</h6>-->
+<!--                        <p id="p_ask0">0</p>-->
+<!--                    </div>-->
+<!--                    <div class="sell-bar">-->
+<!--                        <span onclick="Sell(0)">Sell <span id="p_sell_time0">1</span>x <span id="p_sell0">0</span></span>-->
+<!--                        <button>1x</button>-->
+<!--                        <button>2x</button>-->
+<!--                        <button>3x</button>-->
+<!--                        <button>4x</button>-->
+<!--                    </div>-->
+<!--                    <div class="bid" id="id_bid0" onclick="myBid(0)">-->
+<!--                        <h6>Bid:</h6>-->
+<!--                        <p id="p_bid0">0</p>-->
+<!--                    </div>-->
+
+<!--                    <div class="selling">-->
+<!--                        <span>Selling</span>-->
+<!--                        <button onclick="mySellTime(1,0)">1x</button>-->
+<!--                        <button onclick="mySellTime(2,0)">2x</button>-->
+<!--                        <button onclick="mySellTime(3,0)">3x</button>-->
+<!--                        <button onclick="mySellTime(4,0)">4x</button>-->
+<!--                    </div>-->
+<!--                    <div class="current-value" id="id_current0">-->
+<!--                        <h6>Current Value</h6>-->
+<!--                        <p id="p_current0">0</p>-->
+<!--                    </div>-->
+<!--                    <div class="MKT">-->
+<!--                        <button onclick="Order_Type(0)" >MKT</button>-->
+<!--                    </div>-->
+<!--                    <div class="current-status">-->
+<!--                        <h6>Profit/Loss</h6>-->
+<!--                        <p id="id_ticker_pl0">0</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+    </main>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

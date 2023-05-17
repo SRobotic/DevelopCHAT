@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: poppins;
+  background-color: #D9D9D9;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+.search-bar {
+  width: 50%;
+}
+
+.container-fluid .row .col-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #696CFF;
+  color: #fff;
+  padding: 10px;
+}
+
+.profit-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #E8EEFF;
+  color: #3A8C0F;
+  padding: 10px;
+}
+
+#eva .top-bar {
+  background-color: #435971;
+}
+
+#jpm .top-bar {
+  background-color: #2963A4;
+}
+
+.holder {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 10px 0;
+}
+
+.holder .card {
+  width: 350px;
+  height: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+.holder .card .top-bar {
+  height: 30px;
+  color: #fff;
+  padding: 4px;
+}
+
+.holder .card .message {
+  padding: 5px;
+  border-bottom: 1px solid #697A8D;
+  color: #697A8D;
+}
+
+.holder .trade {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 65% 35%;
+      grid-template-columns: 65% 35%;
+  padding: 5px;
+}
+
+.holder .trade .sell-bar {
+  margin: 5px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+  border: 1px solid red;
+  background-color: white;
+}
+
+.holder .trade .sell-bar span {
+  font-size: 16px;
+}
+
+.holder .trade .sell-bar button {
+  width: 30px;
+  height: 30px;
+  background-color: #D9D9D9;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+
+.holder .trade .sell-bar button:active {
+  background-color: #435971;
+}
+
+.holder .trade .current-value {
+  margin: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.holder .trade .current-value h6 {
+  font-weight: 600;
+}
+
+.holder .trade .buy-bar {
+  margin: 5px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+  border: 1px solid green;
+  background-color: white;
+}
+
+.holder .trade .buy-bar span {
+  font-size: 16px;
+}
+
+.holder .trade .buy-bar button {
+  width: 30px;
+  height: 30px;
+  background-color: #D9D9D9;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+
+.holder .trade .buy-bar button:active {
+  background-color: #435971;
+}
+
+.holder .trade .current-status {
+  margin: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.holder .trade .current-status h6 {
+  font-weight: 600;
+}
+
+.holder .trade .selling {
+  margin: 5px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+  border: 1px solid none;
+  background-color: #F0F0F0;
+}
+
+.holder .trade .selling span {
+  font-size: 16px;
+}
+
+.holder .trade .selling button {
+  width: 30px;
+  height: 30px;
+  background-color: #D9D9D9;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+
+.holder .trade .selling button:active {
+  background-color: #435971;
+}
+
+.holder .trade .bid {
+  margin: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.holder .trade .bid h6 {
+  font-weight: 600;
+}
+
+.holder .trade .MKT {
+  margin: 5px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+  border: 1px solid none;
+  background-color: #E7E7E7;
+}
+
+.holder .trade .MKT span {
+  font-size: 16px;
+}
+
+.holder .trade .MKT button {
+  width: 100%;
+  height: 100%;
+  background-color: #D9D9D9;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+
+.holder .trade .MKT button:active {
+  background-color: #435971;
+}
+
+.holder .trade .ask {
+  margin: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.holder .trade .ask h6 {
+  font-weight: 600;
+}
+/*# sourceMappingURL=main.css.map */
