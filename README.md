@@ -1,0 +1,2 @@
+# DevelopCHAT
+adventures with AI
